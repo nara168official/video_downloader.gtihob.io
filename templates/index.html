@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Video Downloader</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Universal Video Downloader</h1>
+        <p>Download videos from YouTube, TikTok, Facebook, and more</p>
+        
+        <div class="download-form">
+            <input type="text" id="video-url" placeholder="Enter video URL...">
+            <select id="platform">
+                <option value="auto">Auto Detect</option>
+                <option value="youtube">YouTube</option>
+                <option value="tiktok">TikTok</option>
+                <option value="facebook">Facebook</option>
+                <option value="other">Other</option>
+            </select>
+            <button id="download-btn">Download</button>
+        </div>
+        
+        <div id="status" class="hidden">
+            <div class="loader"></div>
+            <p id="status-message">Downloading video...</p>
+        </div>
+        
+        <div id="result" class="hidden">
+            <p>Your video is ready!</p>
+            <a id="download-link" href="#" class="download-link">Download Now</a>
+        </div>
+        
+        <div id="error" class="hidden error-message">
+            <p id="error-message"></p>
+        </div>
+    </div>
+    
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
